@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'demo-blueocean'
-    }
-    
-  }
+  agent any
   stages {
     stage('Initialize') {
       steps {
